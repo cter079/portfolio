@@ -1,0 +1,33 @@
+nav{
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+    padding: 0 10px;
+}
+*, *:hover, *:focus, *:active, *:visited{
+    text-decoration: none;
+    outline: none;
+}
+
+
+
+
+
+nav a:focus{
+    border: 1px solid #fff;
+    border-radius: 5px;
+}

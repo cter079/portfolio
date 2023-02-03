@@ -9,6 +9,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use("/api", router);
 
+if(process.env.NODE_ENV === 'production') {
+    app.use(express.static('client/build'));
+}
+
+
 export default app;
 
 

@@ -34,20 +34,31 @@ function ProjectList() {
         <main>
             {loading ? <title>Loading...</title> :
                 <>
-                    <h1 className="center">My projects</h1>
+                    <div className="hero">
+                        <div className="line-top"></div>
+                    <h1 className="hero-title">Camryn's portfolio</h1>
+                    <p className="hero-description">Hey! My name is Camryn. I am a student at the Rotterdam University of Applied Sciences. This is where I keep my school- and personal projects so interested people like you can take a look! You will see projects that I made when I just started coding, but also recent projects so you can see how I make progress in becoming a skilled programmer.</p>
+                
+
+<button className="hero-button"><a href='#projects'>View projects</a></button>
+                    <div className="line-bottom"></div>
+
+
+
+                    </div>
                 
 
                  
 
 
-<div className="projects">
+<div id='projects' className="projects">
                     <ul className="projects-list">
                         {projects.map((project) => (
                             <li key={project.id} className='project-container'>
                             <img className='project-image'src={project.image} alt={project.title} />
 
                                 <h2 className='project-title'>{project.title}</h2>
-                                <p>{project.description}</p>
+                                <p class='project-description'>{project.description}</p>
                                 <p><strong>Category:</strong> {project.category}</p>
                                 <a href={project.projectlink}>Link to GitHub project</a>
                             </li>

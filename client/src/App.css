@@ -1,10 +1,14 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik&display=swap');
 
 h1 {
   font-size: 2rem;
   color: #333;
   margin-bottom: 15px;
 
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 a, a:visited, a:active, a:hover {
@@ -16,7 +20,7 @@ a, a:visited, a:active, a:hover {
 
 
 .projects{
-  margin-top: 250px;
+  margin-top: -140px;
   width: 100%;
 }
 .projects-list {
@@ -28,12 +32,96 @@ a, a:visited, a:active, a:hover {
 
 }
 
+/* .image-container-1{
+  position: absolute;
+  width:200px;
+  height:300px;
+  overflow: hidden;
+  top:13%;
+  right:5%;
+  display: flex;
+  justify-content: center;
+
+}
+.image-container-2{
+  position: absolute;
+  width:200px;
+  height:300px;
+  overflow: hidden;
+  top:13%;
+  right:20%;
+  display: flex;
+  justify-content: center;
+
+} */
+
+
+/* 
+.line-top{
+  width:60%;
+  height: 1px;
+  background-color: #000;
+  margin-top: 30px;
+  margin-left:400px;
+}
+.line-bottom{
+  width:60%;
+  height: 1px;
+  background-color: #000;
+  margin-left:400px;
+  position:absolute;
+  top: 500px;
+} */
+
+.hero{
+  background-color: #ffffff;
+opacity: 0.5;
+height: 400px;
+background-image:  repeating-radial-gradient(circle at 1000px 900px, transparent 0, #ffffff 69px), repeating-linear-gradient(rgba(214, 214, 214, 0.37), rgba(214, 214, 214, 0.37));
+background-color: #ffffff;
+}
+
+.hero-title{
+  padding-top: 75px;
+  margin-left:200px;
+
+  font-family: 'Rubik', sans-serif;
+  color:rgb(61, 61, 61);
+
+}
+.hero-description{
+  margin-left:200px;
+
+  width:20%;
+  word-break: normal;
+  font-family: 'Rubik', sans-serif;
+  
+}
+
+.hero-button{
+  width:140px;
+  height:40px;
+  position: absolute;
+  left:15%;
+  top: 52%;
+  background-color: #fff;
+  border:#000 1px solid;
+  border-radius: 5px;
+}
+.hero-button a{
+  color:black !important;
+  text-decoration: none;
+
+}
+
+
+
 
 
 .project-container {
-  margin-top: 40px;
+  margin-top: 400px;
   width: 400px;
-  max-height: 500px;
+  height: 250px;
   background: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border-radius: 2em;
@@ -43,7 +131,7 @@ a, a:visited, a:active, a:hover {
   border-style: none;
   z-index: 1;
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 .project-container:hover{
@@ -55,8 +143,10 @@ a, a:visited, a:active, a:hover {
   padding-bottom: 0;
   font-family: 'Poppins', sans-serif;
   margin-bottom: 0;
+  margin-left: 80px;
   color: rgb(255, 255, 255);
-  position: relative;
+  position: absolute;
+
 }
 
   /* //create a radial gradient */
@@ -64,22 +154,28 @@ a, a:visited, a:active, a:hover {
 .project-container:nth-child(2){
   background: rgb(224,158,0);
   background: linear-gradient(149deg, rgba(224,158,0,1) 0%, rgba(0,0,0,1) 100%);
-  color: white;
   
 }
 .project-container:nth-child(1){
   background: rgb(255,252,22);
   background: linear-gradient(149deg, rgba(255,252,22,1) 0%, rgba(0,0,0,1) 100%);
-  color: white;
 }
 .project-container:nth-child(3){
   background: rgb(113,215,67);
   background: linear-gradient(149deg, rgba(113,215,67,1) 0%, rgba(0,0,0,1) 100%);
-  color: white;
 }
 
-.project-container:nth-child(2) .project-title{
-  color: white;
+.project-container:nth-child(1) .project-description{
+  position: relative;
+  top:5px;
+}
+.project-container:nth-child(2) .project-description{
+  position: relative;
+  top:-15px;
+}
+.project-container:nth-child(3) .project-description{
+  position: relative;
+  top:10px;
 }
 
 
@@ -99,20 +195,4 @@ a, a:visited, a:active, a:hover {
   transition: all 0.5s ease;
 }
 
-.product-price {
-  display: inline-block;
-  text-align: center;
-  padding: 1em 0;
-  margin: 0;
-  font-size: 1em;
-  color: black;
-}
 
-.product-details {
-  background-color: black;
-  color: white;
-  border-radius: 25px;
-  text-align: center;
-  border: none;
-  cursor: pointer;
-} 
